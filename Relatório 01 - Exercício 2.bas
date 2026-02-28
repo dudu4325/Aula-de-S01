@@ -10,3 +10,5 @@ While senha <> tentativa
 Wend
 
 Print "Acesso liberado"
+
+sleep
