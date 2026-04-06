@@ -29,6 +29,8 @@ public:
   void exibirProta(){
     cout << getNome() << " é um adolescente de " << getIdade() << " anos e sua persona está nível " << nivel << endl;
   }
+
+  virtual ~Protagonista() {}
 };
 
 class Personagem : public Pessoa{
@@ -41,6 +43,8 @@ public:
   void exibirPerso(){
     cout << getNome() << " é um adolescente de " << getIdade() << " anos e seu relacionamento está rank " << rank <<  endl;
   }
+
+  virtual ~Personagem() {}
 };
 
 int main() 
@@ -50,6 +54,9 @@ int main()
     
   prota.exibirProta();
   secun.exibirPerso();
-    
+
+  delete prota;
+  delete secun;
+  
   return 0;
 }
