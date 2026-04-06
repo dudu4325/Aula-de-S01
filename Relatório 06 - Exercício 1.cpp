@@ -31,7 +31,8 @@ public:
     cout << "Potência do Laser: " << potenciaLaser << endl;
     cout << "Integridade: " << integridade << endl << endl;
   }
-  
+
+  virtual ~Robo() {}
 };
 
 int main() 
@@ -46,6 +47,9 @@ int main()
     
     c1.exibirStatus();
     c2.exibirStatus();
-    
+
+    delete c1;
+    delete c2;
+  
     return 0;
 }
